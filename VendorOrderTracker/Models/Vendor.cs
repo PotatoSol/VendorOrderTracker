@@ -28,6 +28,10 @@ namespace VendorOrderTracker.Models
       VendorsOrders.Remove(removeOrder);
     }
 
+    public List<Order> GetAllOrders(){
+      return VendorsOrders;
+    }
+
     public static List<Vendor> GetAll(){
       return _instances;
     }

@@ -7,14 +7,14 @@
     }
     <ul>
         @foreach(Vendor myVendor in Model){
-            <li><a href='/vendors/@myVendor.Id'>@myVendor.Name --- @myVendor.Description</a></li>
+            <li><a href='/vendors/@myVendor.Id'>@myVendor.Name (@myVendor.Id) --- @myVendor.Description</a></li>
             <ul>
                 @foreach(Order myOrder in myVendor.VendorsOrders){
                     <li>@myOrder.Name ..... @myOrder.Price</li>
                 }
             </ul>
-            <form action="/orders/">
-                <label for=`@myVendor.Name`></label>
+            <form action="/orders/" method="post">
+                <label name=`@myVendor.Id`></label>
                 <button type="submit">Add new Order</button>
             </form>
         }
