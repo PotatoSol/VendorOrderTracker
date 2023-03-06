@@ -1,0 +1,16 @@
+@{
+    Layout = "_Layout";
+}
+    <h>Add An Order Form</h><br><br>
+    <p>Adding an order for vendor: @Model.Vendor.Name</p>
+    <form action="/vendors" method="post">
+        <label for="name">Name of Order: </label>
+        <input id="name" name="name" type="text"><br><br>
+        <label for="description">Description of Order: </label>
+        <input id="description" name="description" type="text"><br><br>
+        <label for="price">Price of Order: </label>
+        <input id="price" name="price" type="number"><br><br>
+        <label for="date">Date of Order: </label>
+        <input id="date" name="date" type="number"><br><br>
+        <button type="submit">Submit</button>
+    </form>
