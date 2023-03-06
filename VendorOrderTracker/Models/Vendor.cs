@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace VenderOrderTracker.Models
+namespace VendorOrderTracker.Models
 {
   public class Vendor
   {
