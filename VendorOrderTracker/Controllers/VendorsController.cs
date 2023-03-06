@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace VendorOrderTracker.Controllers{
     public class VendorsController : Controller
     {
-        [HttpGet("/vendors")]
+        [HttpGet("/vendors/")]
         public ActionResult Index(){
             return View();
         }
 
-        [HttpPost("/Add/")]
+        [HttpPost("/vendors/add/")]
         public ActionResult Add(){
             return View();
         }
