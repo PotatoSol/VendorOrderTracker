@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Net.Test.Sdk" Version="17.3.2" />
+        <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+        <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+        <ProjectReference Include="..\VendorOrderTracker\VendorOrderTracker.csproj" />
+    </ItemGroup>
+</Project>
